@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventListner</title>
+    <style>
+        .container{
+            height: 100vh;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        .child{
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="child" id="grey" style="background-color: gray;"></div>
+        <div class="child" id="orange" style="background-color: orange;"></div>
+        <div class="child" id="blue" style="background-color: blue;"></div>
+        <div class="child" id="green" style="background-color: green;"></div>
+    </div>
+
+</body>
+
+<script>
+    const childNode = document.querySelectorAll('.child')
+    const body = document.querySelector('body')
+
+    childNode.forEach((node) => {
+
+        //adding event listner on each element of the child class
+        node.addEventListener('click', (e)=>{
+            console.log(e)
+            //e.target returns the element which activated the listner
+            if(e.target.id === 'grey'){
+                body.style.backgroundColor = 'grey'
+            }
+            if(e.target.id === 'orange'){
+                body.style.backgroundColor = 'orange'
+            }
+            if(e.target.id === 'blue'){
+                body.style.backgroundColor = 'blue'
+            }
+            if(e.target.id === 'green'){
+                body.style.backgroundColor = 'green'
+            }
+        })
+    });
+</script>
+</html>
