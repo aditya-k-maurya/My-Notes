@@ -1,0 +1,15 @@
+// mixins are like functions which allow us to reuse the same code multiple times
+
+
+// parameters are optional in mixins and we can also give default values
+@mixin flex($gap:20px , $content){
+    display: flex;
+    justify-content: space-#{$content};
+    gap: $gap
+}
+
+.abc{
+    // include is used to include the mixin
+    @include flex(10px, between);
+    margin:0px;
+}

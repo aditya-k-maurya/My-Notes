@@ -1,0 +1,28 @@
+// extends are used to reuse the css properties
+
+
+// '%' are used to create a css property only for resuability but we can also extend class and ids aswell
+%abc{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    background-color: black;
+    color: white;
+}
+
+.nav{
+    color: green;
+    // green color will be overridden 
+    @extend %abc;
+}
+
+.abc{
+    margin: 2rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 1rem;
+    @extend .abc ; //class extended
+}

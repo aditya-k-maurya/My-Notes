@@ -1,0 +1,20 @@
+// interpolation is used to combine strings in class or id or property variable name
+
+@mixin margin($pos, $unit){
+    //interpolation example
+    margin-#{$pos} : $unit+ px;
+}
+
+.test{
+    @include margin(right, 20);
+}
+
+@mixin set-icon($name){
+    //interpolation in class name
+    .icon-#{$name}{
+        background-image: url("/icon/#{$name}.png");
+    }
+}
+
+
+@include set-icon(mountain);

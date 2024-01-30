@@ -1,0 +1,12 @@
+
+// variables start with $ sign
+
+$primary-color :red;
+$secondary-color : green;
+
+body{
+    // primary color can be directly injected into the css
+    background-color: $primary-color;
+    color: $secondary-color;
+}
+

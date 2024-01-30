@@ -1,0 +1,13 @@
+// function are used for dynamic values
+// eg - if container width is changed its child will be changed by function
+
+
+$container-width: 1200;
+
+@function half($width){
+    @return $width/2 +px
+}
+
+.half-width{
+    width: half($container-width);
+}

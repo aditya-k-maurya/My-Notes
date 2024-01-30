@@ -1,0 +1,30 @@
+//nesting offers to write css tags of child elements inside the curly braces
+
+nav{
+    margin: 1rem;
+    display: flex;
+
+    // child element of the nav element
+    ul{
+        margin: 0px;
+        padding: 1rem;
+
+        li{
+            display: inline-block;
+        }
+    }
+
+    a{
+        text-decoration: none;
+
+        // & is necessary before psudo class
+        &:hover{
+            color: purple;
+        }
+    }
+
+    @media (max-width:700px) {
+        flex-direction: column;
+    }
+
+}

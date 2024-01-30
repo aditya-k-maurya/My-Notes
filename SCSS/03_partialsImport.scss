@@ -1,0 +1,15 @@
+// Partials is a feature in scss which allow us to keep code in multiple files and then import in the main file
+
+/*
+
+Advantages-
+1. small codes in every file so easy to manage
+2. variables and mixin can be in seperate files and can be manipulated easily
+
+Steps 
+1. Name of the file should start with underscore eg- "_header.scss"
+2. import in the the other files eg- '@import "header" '
+
+*/
+
+
