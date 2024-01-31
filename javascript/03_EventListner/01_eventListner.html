@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listner</title>
+</head>
+<body>
+    <div class="container">
+        <div class="child" id="one"></div>
+        <div class="child"></div>
+    </div>
+</body>
+<script>
+
+    document.getElementById('one').addEventListener('click', (e)=>{
+        console.log(e)
+        console.log(e.target)
+    }, false) // 3rd parameter is default false which is for bubbling and true for capturing propogation
+
+    //type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    //clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keycode
+
+
+</script>
+
+</html>
