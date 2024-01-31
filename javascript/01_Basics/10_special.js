@@ -12,5 +12,5 @@ console.log(newNum)
 
 //reduce method
 const total = arr.reduce((total, nums) =>{
-    return acc+nums
+    return total+nums
 }, 0)
