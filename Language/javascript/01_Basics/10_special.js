@@ -14,3 +14,17 @@ console.log(newNum)
 const total = arr.reduce((total, nums) =>{
     return total+nums
 }, 0)
+
+
+//lexical and closure property
+
+function myFunc(){
+    const name = "Blue"
+    function displayName(){
+        console.log(name);
+    }
+    return displayName; // returning fuction will also return properties assessible by the function through closure property
+}
+
+const func = myFunc()
+myFunc();// we can now access the 
