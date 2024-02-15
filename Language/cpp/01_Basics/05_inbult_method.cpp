@@ -15,8 +15,6 @@ int main()
   max(a, b);  // max of a,b;
   swap(a, b); // swap number
   gcd(a, b);  // gcdo of a,b
-  toupper();
-  tolower();
   ceil();
   floor();
 
@@ -29,6 +27,8 @@ int main()
   size_t position = str.find("World");           // find
   str.replace(7, 5, "Universe");                 // replace
   int results = str.compare("Hello, Universe!"); // compare
+  toupper();
+  tolower();
 
   // array methods
 
